@@ -1,0 +1,155 @@
+# =====================================
+# Generic Church Website Configuration
+# =====================================
+
+# Site Information
+title: "My Church"
+description: "A welcoming church community growing in faith, serving others, and glorifying God."
+url: ""
+baseurl: ""
+
+
+# Church Information
+church:
+  name: "My Church"
+  tagline: "A place to belong, believe, and become."
+  
+  address:
+    street: "123 Church Street"
+    city: "Your City"
+    state: "Your State"
+    zip: "00000"
+
+  contact:
+    phone: "(000) 000-0000"
+    email: "info@example.com"
+
+  service_times:
+    sunday:
+      - "Sunday School - 9:30 AM"
+      - "Worship Service - 10:45 AM"
+    weekday:
+      - "Bible Study - Wednesday 7:00 PM"
+
+
+# Theme
+theme: minima
+
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+permalink: pretty
+
+
+# Collections
+collections:
+
+  sermons:
+    output: true
+    permalink: /sermons/:title/
+
+  events:
+    output: true
+    permalink: /events/:title/
+
+  ministries:
+    output: true
+    permalink: /ministries/:title/
+
+
+# Layout Defaults
+defaults:
+
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+  - scope:
+      path: ""
+      type: "sermons"
+    values:
+      layout: "sermon"
+
+
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+
+
+  - scope:
+      path: ""
+      type: "ministries"
+    values:
+      layout: "ministry"
+
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+
+# SEO Settings
+author:
+  name: "My Church"
+
+social:
+  links:
+    - "https://facebook.com"
+    - "https://youtube.com"
+
+
+
+# Site Features
+features:
+  sermons: true
+  events: true
+  ministries: true
+  online_giving: true
+  livestream: true
+
+
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+
+  - title: "About"
+    url: "/about/"
+
+  - title: "Sermons"
+    url: "/sermons/"
+
+  - title: "Ministries"
+    url: "/ministries/"
+
+  - title: "Events"
+    url: "/events/"
+
+  - title: "Give"
+    url: "/give/"
+
+
+
+# Exclude Build Files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+
+
+# Pagination
+paginate: 6
+paginate_path: "/page:num/"
