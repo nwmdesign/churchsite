@@ -375,3 +375,19 @@ footer p {
         min-height:75vh;
     }
 }
+.white-section {
+    background:#ffffff;
+}
+
+.light-section {
+    background:#f8fafc;
+}
+
+.primary-section {
+    background:var(--primary-dark);
+    color:white;
+}
+
+.primary-section h2 {
+    color:white;
+}
