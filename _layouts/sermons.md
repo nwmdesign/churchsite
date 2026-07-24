@@ -1,0 +1,5 @@
+---
+layout: sermon
+title: Sermons
+---
+
