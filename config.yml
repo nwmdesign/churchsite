@@ -126,7 +126,7 @@ navigation:
     url: "/about/"
 
   - title: "Sermons"
-    url: "/sermons/"
+    url: "/churchsite/sermons/"
 
   - title: "Ministries"
     url: "/ministries/"
