@@ -133,7 +133,7 @@ navigation:
     url: "/about/"
 
   - title: "Sermons"
-    url: "/churchsite/sermons/"
+    url: "/sermons"
 
   - title: "Ministries"
     url: "/ministries/"
