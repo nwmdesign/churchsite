@@ -1,14 +1,6 @@
 ---
 layout: default
-title: Sermons
+title: sermon
 ---
 
-<div class="sermon-grid">
-
-{% for sermon in site.sermons limit:10 %}
-
-{% include sermon-card.html sermon=sermon %}
-
-{% endfor %}
-
-</div>
+{{content}}
