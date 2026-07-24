@@ -22,10 +22,13 @@
 
 
   <div class="sermon-content">
-
-    <h3>
-      {{ sermon.title }}
-    </h3>
+    
+    <a href="{{ sermon.url | relative_url }}">
+      <h3>
+        {{ sermon.title }}
+      </h3>
+    </a>
+      
 
 
     {% if sermon.scripture %}
