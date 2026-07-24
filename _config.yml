@@ -87,7 +87,7 @@ defaults:
     values:
       layout: "ministry"
 
-    - scope:
+  - scope:
       path: ""
       type: "page"
     values:
