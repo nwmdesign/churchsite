@@ -1,13 +1,13 @@
 ---
 title: sermon
 ---
-
-# {{ page.title }} 
-## {{ page.date }}
+{{ page.title }}
 {{ page.scripture }}
+{% if page.series %}
+{{ page.series }}
 
-{{ page.image }}
+Insert {{ page.youtube }}
 
-{{ content }}
+{{ page.description }}
 
-## Explore More Sermons
+{{content}}
