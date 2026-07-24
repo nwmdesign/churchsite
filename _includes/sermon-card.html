@@ -1,0 +1,82 @@
+<article class="sermon-card">
+
+  <div class="sermon-image">
+
+    {% if sermon.cover %}
+      <img 
+        src="{{ sermon.cover | relative_url }}" 
+        alt="{{ sermon.title }}"
+      >
+    {% elsif sermon.thumbnail %}
+      <img 
+        src="{{ sermon.thumbnail | relative_url }}" 
+        alt="{{ sermon.title }}"
+      >
+    {% else %}
+      <div class="sermon-placeholder">
+        <span>▶</span>
+      </div>
+    {% endif %}
+
+  </div>
+
+
+  <div class="sermon-content">
+
+    <h3>
+      {{ sermon.title }}
+    </h3>
+
+
+    {% if sermon.scripture %}
+    <p class="scripture">
+      {{ sermon.scripture }}
+    </p>
+    {% endif %}
+
+
+    <div class="sermon-meta">
+
+      {% if sermon.speaker %}
+      <span>
+        {{ sermon.speaker }}
+      </span>
+      {% endif %}
+
+
+      <span>
+        {{ sermon.date | date: "%B %d, %Y" }}
+      </span>
+
+    </div>
+
+
+    {% if sermon.topics %}
+    <div class="sermon-tags">
+
+      {% for topic in sermon.topics %}
+        <span>
+          {{ topic }}
+        </span>
+      {% endfor %}
+
+    </div>
+    {% endif %}
+
+
+
+    {% if sermon.youtube %}
+    <a 
+      class="sermon-button"
+      href="https://youtube.com/watch?v={{ sermon.youtube }}"
+      target="_blank">
+
+      ▶ Watch Sermon
+
+    </a>
+    {% endif %}
+
+
+  </div>
+
+</article>
