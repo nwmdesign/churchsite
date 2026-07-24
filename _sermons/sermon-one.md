@@ -13,14 +13,7 @@ cover:
 featured:
 description:
 ---
-{{ page.title }}
-{{ page.scripture }}
-{% if page.series %}
-{{ page.series }}
 
-Insert {{ page.youtube }}
-
-{{ page.description }}
-Here is the sermon content
+Sermon One
 
 
