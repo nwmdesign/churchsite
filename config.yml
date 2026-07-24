@@ -5,8 +5,8 @@
 # Site Information
 title: "My Church"
 description: "A welcoming church community growing in faith, serving others, and glorifying God."
-url: ""
-baseurl: ""
+url: "https://nwmdesign.github.io"
+baseurl: "/churchsite"
 
 
 # Church Information
@@ -86,6 +86,13 @@ defaults:
       type: "ministries"
     values:
       layout: "ministry"
+
+    - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "page"
+        
 
 
 
