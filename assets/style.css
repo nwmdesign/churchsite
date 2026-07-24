@@ -567,3 +567,26 @@ footer p {
 .primary-section h2 {
     color:white;
 }
+
+.sermon-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:30px;
+
+}
+
+
+
+@media(max-width:768px){
+
+.sermon-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
